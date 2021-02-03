@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Vue Js - HelloWorld App</title>
+
+  <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+  <!-- Using via Google Web Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- https://tailwindcss.com/docs/installation -->
+  <!-- Using Tailwind via CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+  <!-- Vue CDN -->
+  <script src="https://unpkg.com/vue@next"></script>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<scripr src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></scripr>
+
+</head>
+
+<body>
+<div  id="app" class="container d-flex justify-content-center align-items-center">
+      <div class="card">
+          <div class="upper"> <img v-bind:src="image2" class="img-fluid"> </div>
+          <div class="user text-center">
+              <div class="profile"> <img v-bind:src="image1" class="rounded-circle" width="80"> </div>
+          </div>
+          <div class="mt-24 text-center">
+              <h4 class="mb-0">{{ name }}</h4> <span class="text-muted d-block mb-2">{{ location }}</span> <button class="btn btn-primary btn-sm follow">{{ follow }}</button>
+              <div class="d-flex justify-content-between align-items-center mt-4 px-4">
+                  <div class="stats">
+                      <h6 class="mb-0">{{ followers }}</h6> <span>{{ followersdata }}</span>
+                  </div>
+                  <div class="stats">
+                      <h6 class="mb-0">{{ projects }}</h6> <span> {{ projectsdata }}</span>
+                  </div>
+                  <div class="stats">
+                      <h6 class="mb-0">{{ ranks }}</h6> <span>{{  ranksdata }}</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- my main.js -->
+  <script src="./profile.js"></script>
+</body>
+
+</html>
